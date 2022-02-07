@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'docker build . -t lcherubin/tp-devop-ifriuac:latest && docker push lcherubin/tp-devop-ifriuac'
+        sh 'docker build . -t lcherubin/tp-devop-ifriuac:latest'
       }
     }
 
