@@ -10,7 +10,7 @@ pipeline {
     stage('deploy') {
       steps {
         sh 'minikube kubectl -- apply -f k8s.yaml'
-        sh 'minikube kubectl -- apply get all'
+        sh 'minikube kubectl -- get all'
       }
     }
 
